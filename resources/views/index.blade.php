@@ -18,6 +18,15 @@
 <body>
 
    <h1>Ciao</h1>
+   <ul>
+      @foreach ($last_films_release as $last_film)
+         <li>
+            {{$last_film->name}}
+            
+         </li>
+         
+      @endforeach
+   </ul>
 
 </body>
 
