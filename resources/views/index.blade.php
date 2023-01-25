@@ -19,7 +19,7 @@
 <h1>STIAMO STAMPANDO I FILM</h1>
    <h2>Stampa gli ultimi 10 films in ordine alfabetico</h1>
    <ul>
-      @foreach ($last_films_release as $last_film)
+      @foreach ($last_films as $last_film)
          <li>
             {{$last_film->name}}
             
@@ -29,7 +29,7 @@
    </ul>
    <h2>Stampa gli ultimi 10 film in ordine di uscita</h2>
    <ul>
-      @foreach ($last_film as $film)
+      @foreach ($last_films_release as $film)
          <li>
             {{$film->release_date}}
          </li>
